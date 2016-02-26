@@ -23,11 +23,11 @@ $('#calc').click(function() {
   
     if (converter == 1)
     {
-      $('#answer').html('The bulge <i>h</i> is ' + (1000 * sagitta).toFixed(2) + ' meters');
+      $('#answer').html('Over a distance of ' + arcLength + 'km, the height <i>h</i> of the bulge is ' + (1000 * sagitta).toFixed(2) + ' meters');
     }
   else
     {
-      $('#answer').html('The bulge <i>h</i> is ' + (5280 * sagitta).toFixed(2) + ' feet');
+      $('#answer').html('Over a distance of ' + arcLength + ' miles, the height <i>h</i> of the bulge is ' + (5280 * sagitta).toFixed(2) + ' feet');
     }
   
     $('#answer').fadeIn(2000);
