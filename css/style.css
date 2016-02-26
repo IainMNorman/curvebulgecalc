@@ -1,3 +1,7 @@
 body { font-family: verdana;}
 
 i { font-family: serif; font-size: bigger; font-weight: bold; font-style: italic; }
+
+#answer { color: #0288d1; }
+
+#answer span { color: #ff5252; }
