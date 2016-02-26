@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Earth Curvature Bulge Calculator</title>
+    
+    
+    
+    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+
+        <link rel="stylesheet" href="css/style.css">
+
+    
+    
+    
+  </head>
+
+  <body>
+
+    <div class="container">
+  <h1 class="page-header">Earth Curvature Bulge Calculator</h1>
+  <div class="row">
+    <div class="col-sm-6">
+      <h2>The calculator</h2>
+      <p>Simply enter the distance you want to work out the bulge due to curvature for below, choose your units and press <i>calculate</i>.</p>
+      <div class="form-inline">
+        <div class="form-group">
+          <label for="distance">Distance</label>
+          <input type="text" class="form-control" id="distance" placeholder="Enter distance">
+        </div>
+        <div class="form-group">
+          <select id="units" class="form-control">
+            <option value="0">Metric (kilometers)</option>
+            <option value="1">Imperial (miles)</option>
+          </select>
+        </div>
+        <button id="calc" class="btn btn-default">Calculate</button>
+      </div>
+
+      <h1 id="answer"></div>
+    
+    <div class="col-sm-6">
+      <h2>The mathematics</h2>
+      
+      <p>We want to work out the height <i>h</i>, for a given distance <i>d</i>.</p>
+      <p><img class="img-responsive" src="http://teknohippy.net/ecc/step1.png"></p>
+      <p>To calculate this we need to first work out the distance <i>l</i> through the earth to the center point .</p>
+      <p><img class="img-responsive" src="http://teknohippy.net/ecc/step2.png"></p>
+      <p>We'll need this angle <i>θ</i> in degrees first of all.</p>
+      <p><img class="img-responsive" src="http://teknohippy.net/ecc/step3.png"></p>
+      <p>Given that <i>d</i> is a fraction of the earth's diameter <i>r</i>, then <i>θ</i> is simply calculated with the following equation.</p>
+      <p><img style="width: 50%;margin-left:25%" src="http://teknohippy.net/ecc/form1.svg"></p>
+      <p>Once we have <i>θ</i>, we can work out <i>l</i> as so.</p>
+      <p><img class="img-responsive" src="http://teknohippy.net/ecc/step4.png"></p>
+      <p>The radius of the earth <i>r</i> and <i>l</i> form a right angle triangle, so using half of <i>θ</i> we can work out <i>l</i> with the following bit of trig, that you will have most likely learned in school.</p>
+      <p><img style="width: 50%;margin-left:25%" src="http://teknohippy.net/ecc/form2.svg"></p>
+      <p>Now that we know <i>l</i>, calculating <i>h</i> is simple using pythagoras.</p>
+      <p><img class="img-responsive" src="http://teknohippy.net/ecc/step5.png"></p>
+      <p>As you can see we simply need to calculate <i>f</i> and subtract it from <i>r</i> to find <i>h</i>, the following formula will do that. See if you can spot the reverse pythagoras you also may have learned in school.</p>
+      <p><img style="width: 50%;margin-left:25%" src="http://teknohippy.net/ecc/form3.svg"></p>
+      <p>And there you have it, quite simple maths when broken down to its base components, yet understandable by any secondary level student the world over. The whole thing can be simplified down to the following.</p>
+      <p><img style="width: 80%;margin-left:10%" src="http://teknohippy.net/ecc/form4.svg"></p>
+      <p>To be honest I'd <a href="#">use the calculator</a>. It's easier, and if you check the javascript you can see it doing all the same maths as above, albeit with radians instead of degrees.</p>
+    </div>
+      
+  </div>
+</div>
+
+<div class="container text-center" style="margin-top: 30px;">
+  <small>Made with &hearts;, a little effort and honest mathematics. View on <a href="https://gist.github.com/0270d0ed1d0ce7a4fc6b">Github</a></small>
+</div>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+        <script src="js/index.js"></script>
+
+    
+    
+    
+  </body>
+</html>
