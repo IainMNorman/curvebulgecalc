@@ -27,7 +27,7 @@ $('#calc').click(function() {
     }
   else
     {
-      $('#answer').html('Over a distance of <span>' + arcLength + ' miles</span>, the height <i>h</i> of the bulge is <span>' + (5280 * sagitta).toFixed(2) + ' feet</span>');
+      $('#answer').html('Over a distance <i>d</i> of <span>' + arcLength + ' miles</span>, the height <i>h</i> of the bulge is <span>' + (5280 * sagitta).toFixed(2) + ' feet</span>');
     }
   
     $('#answer').fadeIn(2000);
