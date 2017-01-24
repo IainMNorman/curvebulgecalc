@@ -23,7 +23,7 @@ $('#calc').click(function() {
   
     if (converter == 1)
     {
-      $('#answer').html('Over a distance of <span>' + arcLength + 'km</span>, the height <i>h</i> of the bulge is <span>' + (1000 * sagitta).toFixed(2) + ' meters</span>');
+      $('#answer').html('Over a distance of <i>d</i> <span>' + arcLength + 'km</span>, the height <i>h</i> of the bulge is <span>' + (1000 * sagitta).toFixed(2) + ' meters</span>');
     }
   else
     {
